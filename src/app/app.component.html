@@ -1,5 +1,7 @@
-<app-top-bar></app-top-bar>
-
-<div class="container">
-  <router-outlet></router-outlet>
+<div class="todo__wrapper">
+  <div class="todo" *ngIf="todos">
+    <h1 class="todo__title">Todo app</h1>
+    <app-todo-list [todos]="todos"></app-todo-list>
+    <app-add-todo></app-add-todo>
+  </div>
 </div>
